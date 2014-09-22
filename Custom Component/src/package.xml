@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CustomLookupCtlr</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CustomLookup</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>ContactCustomLookup</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Object_Field_Set_Mapping__c</members>
+        <members>Reference_Mapping__c</members>
+        <members>Reference__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Waiting</members>
+        <members>jQuery181</members>
+        <name>StaticResource</name>
+    </types>
+    <version>31.0</version>
+</Package>

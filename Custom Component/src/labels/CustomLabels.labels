@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Amazon_Callout_Error</fullName>
+        <categories>AmazonHandler CalloutException</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amazon Callout Error</shortDescription>
+        <value>Remote site setting with respect to Amazon call out</value>
+    </labels>
+    <labels>
+        <fullName>Amazon_DML_Exception</fullName>
+        <categories>Amazon Failed DML</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amazon DML Exception</shortDescription>
+        <value>Failed to update Events because of DML Exception</value>
+    </labels>
+    <labels>
+        <fullName>Amazon_Failed_DML_Error</fullName>
+        <categories>Amazon Failed DML</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amazon Failed DML Error</shortDescription>
+        <value>Failed DML</value>
+    </labels>
+    <labels>
+        <fullName>Amazon_Parsing_Error</fullName>
+        <categories>AmazonHandler Parsing Body</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amazon Parsing Error</shortDescription>
+        <value>Error in response body parsing</value>
+    </labels>
+    <labels>
+        <fullName>Amazon_Retrieval_Callout_Error</fullName>
+        <categories>AmazonHandler Callout Retriever Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amazon Retrieval Callout Error</shortDescription>
+        <value>Call out for Amazon info retrieval</value>
+    </labels>
+    <labels>
+        <fullName>Amazon_Retrieval_Error</fullName>
+        <categories>AmazonHandler Retrieving Data</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amazon Retrieval Error</shortDescription>
+        <value>Error in retrieving data from Amazon</value>
+    </labels>
+    <labels>
+        <fullName>CM_BlankField</fullName>
+        <categories>Content Mapping Trigger Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_BlankField</shortDescription>
+        <value>Field can not be blank</value>
+    </labels>
+    <labels>
+        <fullName>CM_ERROR</fullName>
+        <categories>Content Mapping Erros</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_ERROR</shortDescription>
+        <value>Content Mapping is wrong for this on topic!</value>
+    </labels>
+    <labels>
+        <fullName>CM_EXTERNALERROR</fullName>
+        <categories>Content Mapping Erros</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_EXTERNALERROR</shortDescription>
+        <value>External Record formation is wrong!</value>
+    </labels>
+    <labels>
+        <fullName>CM_InvalidField</fullName>
+        <categories>Content Mapping Trigger Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_InvalidField</shortDescription>
+        <value>Invalid Field. Please enter a valid field of</value>
+    </labels>
+    <labels>
+        <fullName>CM_InvalidRecordType</fullName>
+        <categories>Content Mapping Trigger Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_InvalidRecordType</shortDescription>
+        <value>Invalid record type. Please enter valid record type for this object.</value>
+    </labels>
+    <labels>
+        <fullName>CM_NOT_FOUND</fullName>
+        <categories>Content Mapping Erros</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_NOT_FOUND</shortDescription>
+        <value>Content Mapping is not found for</value>
+    </labels>
+    <labels>
+        <fullName>CM_ObjectBlank</fullName>
+        <categories>Content Mapping Trigger Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_ObjectBlank</shortDescription>
+        <value>Object name is blank. Please enter valid object name.</value>
+    </labels>
+    <labels>
+        <fullName>CM_ObjectInvalid</fullName>
+        <categories>Content Mapping Trigger Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM_ObjectInvalid</shortDescription>
+        <value>Invalid object name. Please enter valid object name.</value>
+    </labels>
+    <labels>
+        <fullName>CM_URL_Error</fullName>
+        <categories>ScheduleEventHandler Location Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CM URL Error</shortDescription>
+        <value>Internal content mapping is not defined for json field url.</value>
+    </labels>
+    <labels>
+        <fullName>CONTENTMAPPINGERROR</fullName>
+        <categories>Content Mapping Erros</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CONTENTMAPPINGERROR</shortDescription>
+        <value>Content Mapping is not present.</value>
+    </labels>
+    <labels>
+        <fullName>Callout_Error</fullName>
+        <categories>AmazonHandler CalloutException</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Callout Error</shortDescription>
+        <value>Malformed URL, please check the endpoint URL</value>
+    </labels>
+    <labels>
+        <fullName>ContactRecordTypeURL</fullName>
+        <categories>Contact Record Type page URL</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ContactRecordTypeURL</shortDescription>
+        <value>/setup/ui/recordtypeselect.jsp?ent=Contact&amp;retURL=/apex/contactsearch&amp;save_new_url=/003/e?retURL=/003/o&amp;nooverride=1</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Applicant_RecordType</fullName>
+        <categories>Contact Record Types</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact_Applicant_RecordType</shortDescription>
+        <value>Applicant</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Association_Message</fullName>
+        <categories>Contact Association Validation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Association Message</shortDescription>
+        <value>There are no Contact Associations</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Common_Fields_Update</fullName>
+        <categories>Topic Names</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Common Fields Update</shortDescription>
+        <value>Contact Common Fields Update</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Instructor_RecordType</fullName>
+        <categories>Contact Record Types</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact_Instructor_RecordType</shortDescription>
+        <value>Instructor</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Search_Message</fullName>
+        <categories>Search Validation Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Search Message</shortDescription>
+        <value>No related Contact records available</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Student_RecordType</fullName>
+        <categories>Contact Record Types</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact_Student_RecordType</shortDescription>
+        <value>Student</value>
+    </labels>
+    <labels>
+        <fullName>Content_Mapping_Datatype</fullName>
+        <categories>Content Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This lable is for Content Mapping which will indicate field datatype</shortDescription>
+        <value>DATATYPE</value>
+    </labels>
+    <labels>
+        <fullName>Content_Mapping_FieldName</fullName>
+        <categories>Content Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This lable is for Content Mapping which will indicate field name</shortDescription>
+        <value>FIELDNAME</value>
+    </labels>
+    <labels>
+        <fullName>Content_Mapping_Location</fullName>
+        <categories>Content Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Content_Mapping_Location</shortDescription>
+        <value>Location</value>
+    </labels>
+    <labels>
+        <fullName>Content_Mapping_Lookup</fullName>
+        <categories>Content Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This lable is for Content Mapping which will indicate lookup</shortDescription>
+        <value>LOOKUP</value>
+    </labels>
+    <labels>
+        <fullName>Content_Mapping_Type</fullName>
+        <categories>Content Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Content_Mapping_Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>Content_Mappng_ReferenceTo</fullName>
+        <categories>Content Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This lable is for Content Mapping which will indicate field reference to</shortDescription>
+        <value>REFERENCETO</value>
+    </labels>
+    <labels>
+        <fullName>Create_Reference</fullName>
+        <categories>Reference Table Topic Name</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create Reference</shortDescription>
+        <value>Create Reference</value>
+    </labels>
+    <labels>
+        <fullName>Credential_Not_Available</fullName>
+        <categories>Amazon Info Retrieval Messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Credential Not Available</shortDescription>
+        <value>Credential not available for specified source system.</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Contact_Association_Message</fullName>
+        <categories>Duplicate Association Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Contact Association Message</shortDescription>
+        <value>There already exists Contact association for all the Record Types. Please refer to the Contact Link</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Contact_Link_Association_Message</fullName>
+        <categories>Duplicate Association Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Contact Link Association Message</shortDescription>
+        <value>The selected Contact already has a Contact Link record associated with it.</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_external_id</fullName>
+        <categories>Notification Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate external id</shortDescription>
+        <value>Duplicate event found with External Id :</value>
+    </labels>
+    <labels>
+        <fullName>Error_Code</fullName>
+        <categories>Error Description</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Code</shortDescription>
+        <value>Error Code</value>
+    </labels>
+    <labels>
+        <fullName>Error_Context</fullName>
+        <categories>Error Description</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Context</shortDescription>
+        <value>Error Context</value>
+    </labels>
+    <labels>
+        <fullName>Error_Message_On_Access_Restricted_Fields</fullName>
+        <categories>Edit Permission handler For Triggers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message On Access Restricted Fields</shortDescription>
+        <value>You do not have the permission to edit the</value>
+    </labels>
+    <labels>
+        <fullName>Error_Message_On_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message On Edit</shortDescription>
+        <value>There is no Field Set define for the object in record.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Message_On_No_Profile_Matched</fullName>
+        <categories>Edit Permission handler For Triggers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message On No Profile Matched</shortDescription>
+        <value>Your profile do not have permissions to edit this record.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Reason</fullName>
+        <categories>Error Description</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error Reason</shortDescription>
+        <value>Error Reason</value>
+    </labels>
+    <labels>
+        <fullName>Error_State</fullName>
+        <categories>Event State ID</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error_State</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>Event_Complete</fullName>
+        <categories>Event State ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event_Complete</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>Event_New</fullName>
+        <categories>Event State ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event_New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>Event_Ready</fullName>
+        <categories>Event State ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Event_Ready</shortDescription>
+        <value>Ready</value>
+    </labels>
+    <labels>
+        <fullName>ExternalID</fullName>
+        <categories>Notification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExternalID</shortDescription>
+        <value>Id</value>
+    </labels>
+    <labels>
+        <fullName>External_Mapping_Not_Found</fullName>
+        <categories>Amazon Info Retrieval Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>External Mapping Not Found</shortDescription>
+        <value>Internal Source system not found.</value>
+    </labels>
+    <labels>
+        <fullName>External_Record_Not_Found_For_Queue</fullName>
+        <categories>DeleteQueuerBatchController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>External Record Not Found For Queue</shortDescription>
+        <value>No Record Found</value>
+    </labels>
+    <labels>
+        <fullName>Id_JsonContentnotfound</fullName>
+        <categories>Notification Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Id_JsonContentnotfound</shortDescription>
+        <value>Id is not specified in JSON Content!</value>
+    </labels>
+    <labels>
+        <fullName>InProgress_State</fullName>
+        <categories>Event State ID</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InProgress_State</shortDescription>
+        <value>In Progress</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Contact_Field</fullName>
+        <categories>Common Field Update Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Contact Field</shortDescription>
+        <value>Invalid contact field found in event content(JSON).</value>
+    </labels>
+    <labels>
+        <fullName>JSON_invalid</fullName>
+        <categories>Common Field Update Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JSON invalid</shortDescription>
+        <value>The Content(JSON) field in associated event is invalid or empty.</value>
+    </labels>
+    <labels>
+        <fullName>JsonFormatForExternalId</fullName>
+        <categories>DeleteQueuerBatchController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JsonFormatForExternalId</shortDescription>
+        <value>ExternalId</value>
+    </labels>
+    <labels>
+        <fullName>JsonFormatForID</fullName>
+        <categories>DeleteQueuerBatchController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JsonFormatForID</shortDescription>
+        <value>Id</value>
+    </labels>
+    <labels>
+        <fullName>JsonFormatForObjectName</fullName>
+        <categories>DeleteQueuerBatchController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JsonFormatForObjectName</shortDescription>
+        <value>ObjectName</value>
+    </labels>
+    <labels>
+        <fullName>JsonFormatForRecordTypeName</fullName>
+        <categories>DeleteQueuerBatchController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JsonFormatForRecordTypeName</shortDescription>
+        <value>RecordTypeName</value>
+    </labels>
+    <labels>
+        <fullName>JsonFormatForsystemId</fullName>
+        <categories>DeleteQueuerBatchController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JsonFormatForsystemId</shortDescription>
+        <value>systemId</value>
+    </labels>
+    <labels>
+        <fullName>Location_Not_Found</fullName>
+        <categories>Amazon Info Retrieval Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Location Not Found</shortDescription>
+        <value>Content Mapping not found for Location.</value>
+    </labels>
+    <labels>
+        <fullName>No_Contact_Association</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Contact Association</shortDescription>
+        <value>No Contact association found to update.</value>
+    </labels>
+    <labels>
+        <fullName>None_Picklist_Value</fullName>
+        <categories>Picklist Values</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>None Picklist Value</shortDescription>
+        <value>--None--</value>
+    </labels>
+    <labels>
+        <fullName>OrderErrorMessage</fullName>
+        <categories>Order Errors</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderErrorMessage</shortDescription>
+        <value>Pricebook of associating opportunity is different than current order&apos;s pricebook.</value>
+    </labels>
+    <labels>
+        <fullName>OrderErrorMessage_for_Pricebook</fullName>
+        <categories>Order Errors</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderErrorMessage_for Pricebook</shortDescription>
+        <value>Can&apos;t change the pricebook because products are already associated with current pricebook.</value>
+    </labels>
+    <labels>
+        <fullName>OrderErrorMessageonInsert</fullName>
+        <categories>Order Errors</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderErrorMessageonInsert</shortDescription>
+        <value>Associating contract&apos;s &amp; opportunity&apos;s pricebook are different.</value>
+    </labels>
+    <labels>
+        <fullName>Queue_Complete</fullName>
+        <categories>Queue State</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Queue_Complete</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>Queue_Error</fullName>
+        <categories>Queue State</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Queue_Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>Queue_In_Progress</fullName>
+        <categories>Queue State</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Queue_In Progress</shortDescription>
+        <value>In Progress</value>
+    </labels>
+    <labels>
+        <fullName>Queue_New</fullName>
+        <categories>Queue State</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Queue_New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>RecordTypeRequired</fullName>
+        <categories>Notification Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RecordTypeRequired</shortDescription>
+        <value>Record Type is required for this topic&apos;s object.</value>
+    </labels>
+    <labels>
+        <fullName>Region_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Region_Name</shortDescription>
+        <value>us-east-1</value>
+    </labels>
+    <labels>
+        <fullName>Retrieval_In_Progress_State</fullName>
+        <categories>Event State ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Retrieval-In Progress_State</shortDescription>
+        <value>Retrieval-InProgress</value>
+    </labels>
+    <labels>
+        <fullName>Retrieval_Info_Invalid</fullName>
+        <categories>Amazon Info Retrieval Messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Retrieval Info Invalid</shortDescription>
+        <value>Retriever Info is invalid or blank.</value>
+    </labels>
+    <labels>
+        <fullName>Search_Fields_Blank</fullName>
+        <categories>Search Validation Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Fields Blank</shortDescription>
+        <value>No field entered.</value>
+    </labels>
+    <labels>
+        <fullName>Service_Not_Found</fullName>
+        <categories>Amazon Info Retrieval Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Service Not Found</shortDescription>
+        <value>Service Class not available.</value>
+    </labels>
+    <labels>
+        <fullName>Source_Contact_Deletion_Message</fullName>
+        <categories>Source Contact Deletion</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Source Contact Deletion Message</shortDescription>
+        <value>Source Contact Record Deleted.</value>
+    </labels>
+    <labels>
+        <fullName>Source_System_Id</fullName>
+        <categories>System Id</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Source System Id</shortDescription>
+        <value>a0Yi0000002sWei</value>
+    </labels>
+    <labels>
+        <fullName>SystemObjectAPI</fullName>
+        <categories>Object API</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SystemObjectAPI</shortDescription>
+        <value>System__c</value>
+    </labels>
+    <labels>
+        <fullName>System_Id_missing</fullName>
+        <categories>Queue State</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>System Id missing</shortDescription>
+        <value>System Id is missing.</value>
+    </labels>
+    <labels>
+        <fullName>System_name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System_Name</shortDescription>
+        <value>Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>TopicID_ExternalRecord</fullName>
+        <categories>Notification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TopicID_ExternalRecord</shortDescription>
+        <value>a0Wi0000008S6Ox</value>
+    </labels>
+    <labels>
+        <fullName>TopicObjectAPI</fullName>
+        <categories>Object API</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TopicObjectAPI</shortDescription>
+        <value>Topic__c</value>
+    </labels>
+    <labels>
+        <fullName>Topic_ID_is_missing</fullName>
+        <categories>Queue State</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Topic_ID_is_missing</shortDescription>
+        <value>Topic id is missing!</value>
+    </labels>
+    <labels>
+        <fullName>Type_Not_Found</fullName>
+        <categories>Amazon Info Retrieval Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Type Not Found</shortDescription>
+        <value>Content Mapping not found for Type.</value>
+    </labels>
+    <labels>
+        <fullName>WrongRecordType</fullName>
+        <categories>Notification Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WrongRecordType</shortDescription>
+        <value>Record Type defined on topic is wrong!</value>
+    </labels>
+</CustomLabels>
