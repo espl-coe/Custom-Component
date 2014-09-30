@@ -400,6 +400,14 @@
         <value>In Progress</value>
     </labels>
     <labels>
+        <fullName>Internal_Type</fullName>
+        <categories>System_Internal_Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Internal_Type</shortDescription>
+        <value>Topic__c</value>
+    </labels>
+    <labels>
         <fullName>Invalid_Contact_Field</fullName>
         <categories>Common Field Update Message</categories>
         <language>en_US</language>
@@ -544,6 +552,7 @@
     </labels>
     <labels>
         <fullName>Region_Name</fullName>
+        <categories>Amazon S3 Region name</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Region_Name</shortDescription>
@@ -564,6 +573,30 @@
         <protected>false</protected>
         <shortDescription>Retrieval Info Invalid</shortDescription>
         <value>Retriever Info is invalid or blank.</value>
+    </labels>
+    <labels>
+        <fullName>S3</fullName>
+        <categories>Amazon_System_Type</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>S3</shortDescription>
+        <value>S3</value>
+    </labels>
+    <labels>
+        <fullName>S3_BucketName</fullName>
+        <categories>Amazon S3 HiR bucket name</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>S3_BucketName</shortDescription>
+        <value>dev.crm.campusops.net</value>
+    </labels>
+    <labels>
+        <fullName>SQS</fullName>
+        <categories>Amazon_System_Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SQS</shortDescription>
+        <value>SQS</value>
     </labels>
     <labels>
         <fullName>Search_Fields_Blank</fullName>

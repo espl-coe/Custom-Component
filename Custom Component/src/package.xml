@@ -9,7 +9,7 @@
         <name>ApexComponent</name>
     </types>
     <types>
-        <members>ContactCustomLookup</members>
+        <members>AccountCustomLookUp</members>
         <name>ApexPage</name>
     </types>
     <types>
