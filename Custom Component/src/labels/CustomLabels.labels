@@ -257,6 +257,14 @@
         <value>Credential not available for specified source system.</value>
     </labels>
     <labels>
+        <fullName>Domain</fullName>
+        <categories>Content Generation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Domain</shortDescription>
+        <value>Domain</value>
+    </labels>
+    <labels>
         <fullName>Duplicate_Contact_Association_Message</fullName>
         <categories>Duplicate Association Message</categories>
         <language>en_US</language>
@@ -464,6 +472,14 @@
         <value>systemId</value>
     </labels>
     <labels>
+        <fullName>Key</fullName>
+        <categories>Content Generation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
         <fullName>Location_Not_Found</fullName>
         <categories>Amazon Info Retrieval Messages</categories>
         <language>en_US</language>
@@ -541,6 +557,22 @@
         <protected>true</protected>
         <shortDescription>Queue_New</shortDescription>
         <value>New</value>
+    </labels>
+    <labels>
+        <fullName>RECORDTYPE_INPUT</fullName>
+        <categories>Content Generation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RECORDTYPE_INPUT</shortDescription>
+        <value>Input</value>
+    </labels>
+    <labels>
+        <fullName>RECORDTYPE_RESULT</fullName>
+        <categories>Content Generation</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RECORDTYPE_RESULT</shortDescription>
+        <value>ResultSet</value>
     </labels>
     <labels>
         <fullName>RecordTypeRequired</fullName>

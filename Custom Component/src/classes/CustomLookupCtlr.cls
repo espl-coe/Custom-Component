@@ -98,9 +98,13 @@ global class CustomLookupCtlr {
                 Object ss = sObj.get(mm.fieldPath);
                 lstId.add(String.valueof(ss));
             }    
+            system.debug('-----------'+lstId.size());
+             system.debug('-----------'+lstId);
             if(lstId.size() > 0){
-                lstRef = [Select id,Name from Reference__c where id=:lstId];
+                lstRef = [Select id,Name from Reference__c where id IN :lstId order by Sort_Position__c ASC NULLS LAST limit 20];
+
             }
+            system.debug('============'+lstRef);
             
             for(Reference__c ref:lstRef){
                 mpIdtoName.put(ref.id,ref.Name);
@@ -110,17 +114,17 @@ global class CustomLookupCtlr {
                 if(!mpIdtoName.isEmpty()){
                     String lkId = String.valueof(sObj.get(mem.fieldPath));
                     lstFieldswithRef.add(new fieldWrap(mem.Label,mem.fieldPath,mpIdtoName.get(lkId),lkId,true,sObj));
+                   
                 }else{
                     lstFieldswithRef.add(new fieldWrap(mem.Label,mem.fieldPath,null,null,true,sObj));
                 }
             }
             
-            
+             system.debug('--------------'+lstFieldswithRef);
             for(Schema.FieldSetMember mem:fieldSetMemberListWithoutReference){
-            	Object ss = sObj.get(mem.fieldPath);
-            	
-                lstFieldswithRef.add(new fieldWrap(mem.Label,mem.fieldPath,string.valueof(ss),null,false,sObj));   
+                Object ss = sObj.get(mem.fieldPath);
                 
+                lstFieldswithRef.add(new fieldWrap(mem.Label,mem.fieldPath,string.valueof(ss),null,false,sObj));   
             }
             
         }       
@@ -131,27 +135,27 @@ global class CustomLookupCtlr {
         String query = 'SELECT ';
         
         if(fieldSetName!= null && objectName!= null && fieldSetName != '' ){
-        	if(this.readFieldSet(objectName,fieldSetName) != null){
-            	for(Schema.FieldSetMember f : this.readFieldSet(objectName,fieldSetName)) {
-                	query += f.getFieldPath() + ', ';
-            	}
-            	query += 'Id,Name FROM '+objectName+' WHERE id=\''+recId+'\'';
-            	return Database.query(query);     
-        	}
+            if(this.readFieldSet(objectName,fieldSetName) != null){
+                for(Schema.FieldSetMember f : this.readFieldSet(objectName,fieldSetName)) {
+                    query += f.getFieldPath() + ', ';
+                }
+                query += 'Id,Name FROM '+objectName+' WHERE id=\''+recId+'\'';
+                return Database.query(query);     
+            }
         }
-    	else{
-        	isCancelError = true;
-        	ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.INFO,System.label.Error_Message_On_Edit));
-    	}
+        else{
+            isCancelError = true;
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.INFO,System.label.Error_Message_On_Edit));
+        }
         
         return null;
     }
     //function to read all fields of sobjects fieldset
     public List<Schema.FieldSetMember> readFieldSet(String objectName,String fieldSetName)
     {
-    	Map<String, String> fieldsdataTypedef = new Map<String, String>();
-    	fieldSetMemberListWithoutReference = new list<Schema.FieldSetMember>();
-    	fieldSetMemberListReference = new list<Schema.FieldSetMember>();
+        Map<String, String> fieldsdataTypedef = new Map<String, String>();
+        fieldSetMemberListWithoutReference = new list<Schema.FieldSetMember>();
+        fieldSetMemberListReference = new list<Schema.FieldSetMember>();
         Map<String, Schema.SObjectType> GlobalDescribeMap = Schema.getGlobalDescribe(); 
         Schema.SObjectType SObjectTypeObj = GlobalDescribeMap.get(objectName);
         List<Schema.FieldSetMember> fieldSetMemberListRef= new list<Schema.FieldSetMember>();
@@ -159,37 +163,37 @@ global class CustomLookupCtlr {
         Schema.Describesobjectresult dsr = SObjectTypeObj.getDescribe();
         Map<String, Schema.SObjectField> acRecObjMap = dsr.fields.getMap();
 
-      	 for(Schema.Sobjectfield fieldItr : acRecObjMap.values()){
+         for(Schema.Sobjectfield fieldItr : acRecObjMap.values()){
             Schema.Describefieldresult fieldResult = fieldItr.getDescribe();
            
            if(String.valueOf(fieldResult.getType()) == 'REFERENCE'){
-           		if(String.valueOf(fieldResult.getReferenceTo()[0]) == 'Reference__c'){
-           			fieldsdataTypedef.put(fieldResult.getLabel(),fieldResult.getName());
-           			
-           		}		
+                if(String.valueOf(fieldResult.getReferenceTo()[0]) == 'Reference__c'){
+                    fieldsdataTypedef.put(fieldResult.getLabel(),fieldResult.getName());
+                    
+                }       
            }
         }
         if(fieldSetName != null && fieldSetName != ''){
             Schema.FieldSet fieldSetObj = dsr.FieldSets.getMap().get(fieldSetName);
-            	if(fieldSetObj != null){
-            	list<Schema.FieldSetMember> fieldSetMember = fieldSetObj.getFields();
-            	
-        		
-            	for(Schema.FieldSetMember refItr : fieldSetMember){
-            		if(fieldsdataTypedef.containsKey(refItr.getLabel())){
-            			fieldSetMemberListReference.add(refItr);
-            			fieldSetMemberListRef.add(refItr);
-            		 	
-            		}
-            		else{
-            			if(refItr.getLabel() != 'Name' && !fieldsdataTypedef.containsKey(refItr.getLabel()))
-            			fieldSetMemberListWithoutReference .add(refItr);
-            			fieldSetMemberListRef.add(refItr);
-            		}
-            	}
+                if(fieldSetObj != null){
+                list<Schema.FieldSetMember> fieldSetMember = fieldSetObj.getFields();
+                
+                
+                for(Schema.FieldSetMember refItr : fieldSetMember){
+                    if(fieldsdataTypedef.containsKey(refItr.getLabel())){
+                        fieldSetMemberListReference.add(refItr);
+                        fieldSetMemberListRef.add(refItr);
+                        
+                    }
+                    else{
+                        if(refItr.getLabel() != 'Name' && !fieldsdataTypedef.containsKey(refItr.getLabel()))
+                        fieldSetMemberListWithoutReference .add(refItr);
+                        fieldSetMemberListRef.add(refItr);
+                    }
+                }
             }
             if(fieldSetMemberListReference.size()>0){
-            	 return fieldSetMemberListRef; 
+                 return fieldSetMemberListRef; 
             }
            return null;
         }
@@ -214,13 +218,13 @@ global class CustomLookupCtlr {
                 if(!mpNametoId.isEmpty() && mpNametoId.containsKey(fr.fieldValue)){
                     sObj.put(fr.fieldApi,mpNametoId.get(fr.fieldValue));
                 }else{
-                	if(fr.refOrNot){
-                		sObj.put(fr.fieldApi,'');
-                	}
-                	else{
-                    	sObj.put(fr.fieldApi, fr.sobj.get(fr.fieldApi));
-                	}
-                	
+                    if(fr.refOrNot){
+                        sObj.put(fr.fieldApi,'');
+                    }
+                    else{
+                        sObj.put(fr.fieldApi, fr.sobj.get(fr.fieldApi));
+                    }
+                    
                 }
             }
         }
@@ -269,17 +273,17 @@ global class CustomLookupCtlr {
                  this.refOrNot = refOrNot;
             }
             if(refOrNot){
-            	if(lkId != null && lkId != ''){
-                	this.refId = lkId;
-                	this.refOrNot = refOrNot;
-            	}
-            	else{
-                	this.refId = ''; 
-                	this.refOrNot = refOrNot;   
-            	}
+                if(lkId != null && lkId != ''){
+                    this.refId = lkId;
+                    this.refOrNot = refOrNot;
+                }
+                else{
+                    this.refId = ''; 
+                    this.refOrNot = refOrNot;   
+                }
             }
             else{
-            	this.refId = rName; 
+                this.refId = rName; 
             }
             
         }
@@ -300,7 +304,7 @@ global class CustomLookupCtlr {
         }
         if(refMapping.size()>0){
             soql += ' and RecordType.Name=\''+refMapping[0].ReferenceRecordType__c+'\'';
-            soql += ' order by Name limit 20';
+            soql += ' order by Sort_Position__c limit 20';
             List<Reference__c> L = new List<Reference__c>();
             try 
             {
